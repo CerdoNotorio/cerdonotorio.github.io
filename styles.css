@@ -1,0 +1,33 @@
+.hidden {
+  display: none;
+}
+
+.clue {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #333;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.clue::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #333;
+  border-left: 2px solid #333;
+}
+
+.clue::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #333;
+  border-right: 2px solid #333;
+}

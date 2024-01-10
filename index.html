@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Happy Birthday Puzzles</title>
+  <script type="module">
+    import './script.js';
+  </script>
+
+</head>
+<body>
+  <div id="clue1" class="clue">
+    <h2>Clue 1:</h2>
+    <p>Hint: Ruined our nightly plan, but at least it helped shed some light on trail.</p>
+    <input type="password" id="passwordInput1" placeholder="Enter password">
+    <button onclick="checkPasswordAndProceed(1)">Submit</button>
+  </div>
+
+  <div id="clue2" class="clue hidden">
+    <h2>Clue 2:</h2>
+    <p>Hint: Sometimes you have to make a mistake in order to find the right path forwards </p>
+    <input type="password" id="passwordInput2" placeholder="Enter password">
+    <button onclick="checkPasswordAndProceed(2)">Submit</button>
+  </div>
+
+  <div id="clue3" class="clue hidden">
+    <h2>Clue 3:</h2>
+    <p>Hint: <pre>
+    I let Caesar write this one. I think the all the stab wounds really went to his head though.
+    Nslsjs mnsytz, bmfsj ijynts ufyt,
+    Fyjxxjyn yt hjfy, fywj ijynts lfxy.
+    Tsl ytsj nsywfqq, bmfsy rfsyx xjqq,
+    Bmfsy fr J, ns ymj hjfyjs' qjnsywtz xjmmt?
+    </pre>
+
+</p>
+    <input type="password" id="passwordInput3" placeholder="Enter password">
+    <button onclick="checkPasswordAndProceed(3)">Submit</button>
+  </div>
+
+  <div id="clue4" class="clue hidden">
+    <h2>Clue 4:</h2>
+    <p>Hint: Seek the truth where code resides, inspect the source where the secret hides</p>
+    <!-- password = 02/22/2022 -->
+    <!-- The first day we met was a Tuesday which is pretty wild for a day that's 02/22/2022 -->
+    <input type="password" id="passwordInput4" placeholder="Enter password">
+    <button onclick="checkPasswordAndProceed(4)">Submit</button>
+
+  </div>
+
+  <div id="clue5" class="clue hidden">
+    <h2>Clue 5:</h2>
+    <p>Hint: Make a call for Fajitas in order to unlock the message.</p>
+    <div id="hiddenTextContainer"></div>
+    
+  </div>
+
+  <div id="imageContainer"></div>
+  <p id="errorMessage">Incorrect password. Try again, grandma.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
